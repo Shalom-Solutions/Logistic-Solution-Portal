@@ -281,8 +281,8 @@ a {
 }
 /* Blinking animation */
 .blink {
-    animation: blink-animation 4s steps(5, start) infinite;
-    -webkit-animation: blink-animation 4s steps(5, start) infinite;
+    animation: blink-animation 20s steps(5, start) infinite;
+    -webkit-animation: blink-animation 30s steps(5, start) infinite;
   }
   @keyframes blink-animation {
     to {
