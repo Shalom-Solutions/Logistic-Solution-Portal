@@ -48,10 +48,31 @@
     background-color: #bfe8de;
     border-radius: 50%;
     color: #033043;
+    transition: width 2s, height 2s, transform 400ms;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 
 }
 
-span {
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+img:hover {
+    width: 110px;
+    height: auto;
+    transform: rotate(359deg);
+    
+}
+
+
+.S-color {
     color: #bfe8de;
 }
     
@@ -89,9 +110,12 @@ span {
     border: 1px solid #00a082ff;
     border-radius: 3px;
     background-color: #bfe8de;
+    color: Black;
 }
+
 input:focus {
-    background-color: white;
+    background-color: rgb(15, 81, 45);
+    color: white;
 }
 
 .sign-in-form button {
@@ -168,7 +192,7 @@ a {
 
  a:hover, button:hover {
     font-size: 1.1rem;
-    color: ;
+    transition: 2s;
     /* background-color: #00a082ff; */
 }
 
@@ -255,3 +279,18 @@ a {
     color: white;
     padding: 20px;
 }
+/* Blinking animation */
+.blink {
+    animation: blink-animation 4s steps(5, start) infinite;
+    -webkit-animation: blink-animation 4s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
