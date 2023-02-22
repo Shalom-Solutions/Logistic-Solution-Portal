@@ -32,7 +32,7 @@
     border-radius: 3px;
     height: max-content;
     overflow: hidden;
-
+    /* margin: .5rem; */
 }
 .title-wrapper {
     display: flex;
@@ -206,6 +206,10 @@ a {
 .f-dis {
     color: black;
 }
+.tandc {
+    text-decoration: underline;
+    color:#00a082ff
+}
 /*container2 {
     width: 100%;
     background-color: #bfe8de;
@@ -282,7 +286,7 @@ a {
 /* Blinking animation */
 .blink {
     animation: blink-animation 20s steps(5, start) infinite;
-    -webkit-animation: blink-animation 30s steps(5, start) infinite;
+    -webkit-animation: blink-animation 20s steps(5, start) infinite;
   }
   @keyframes blink-animation {
     to {
